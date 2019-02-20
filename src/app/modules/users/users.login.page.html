@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Login to AvocaCRM
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+        <ion-img src="/assets/shapes.svg"></ion-img>
+        <ion-card-header>
+            <ion-card-subtitle>Get Started</ion-card-subtitle>
+            <ion-card-title>Welcome to Ionic</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <form (ngSubmit)="login()">
+                <ion-item>
+                    <ion-label>Username</ion-label>
+                    <ion-input type="text" [(ngModel)]="user.username" name="title"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Password</ion-label>
+                    <ion-input type="password" [(ngModel)]="user.password" name="description"></ion-input>
+                </ion-item>
+                <button ion-button type="submit" block>Login</button>
+            </form>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
