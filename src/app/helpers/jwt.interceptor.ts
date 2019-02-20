@@ -10,8 +10,8 @@ export class JwtInterceptor implements HttpInterceptor {
             request = request.clone({
                 setHeaders: {
                     'Content-Type': 'application/vnd.api+json',
-                    Accept: 'application/vnd.api+json',
-                    Authorization: `Bearer ${currentUser.access_token}`
+                    'Accept': 'application/vnd.api+json',
+                    'Authorization': `Bearer ${currentUser.access_token}`
                 }
             });
         }

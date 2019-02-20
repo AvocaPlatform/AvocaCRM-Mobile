@@ -12,10 +12,6 @@ const routes: Routes = [
         loadChildren: './modules/home/home.module#HomePageModule'
     },
     {
-        path: 'list',
-        loadChildren: './modules/list/list.module#ListPageModule'
-    },
-    {
         path: 'users',
         loadChildren: './modules/users/users.module#UsersModule'
     }
@@ -26,4 +22,5 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 export class AppRoutingModule {
+
 }

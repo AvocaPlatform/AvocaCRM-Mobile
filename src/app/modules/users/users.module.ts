@@ -5,6 +5,7 @@ import {IonicModule} from '@ionic/angular';
 import {RouterModule} from '@angular/router';
 
 import {UsersLoginPage} from './users.login.page';
+import {UsersListPage} from './users.list.page';
 
 @NgModule({
     imports: [
@@ -14,11 +15,18 @@ import {UsersLoginPage} from './users.login.page';
         RouterModule.forChild([
             {
                 path: '',
+                component: UsersListPage
+            },
+            {
+                path: 'login',
                 component: UsersLoginPage
             }
         ])
     ],
-    declarations: [UsersLoginPage]
+    declarations: [
+        UsersLoginPage,
+        UsersListPage
+    ]
 })
 export class UsersModule {
 

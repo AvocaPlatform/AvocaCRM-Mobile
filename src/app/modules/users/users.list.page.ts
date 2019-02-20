@@ -1,12 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {UserModel} from '../users/user.model';
+import {UserModel} from './user.model';
 
 @Component({
     selector: 'app-list',
-    templateUrl: 'list.page.html',
-    styleUrls: ['list.page.scss']
+    templateUrl: 'users.list.page.html'
 })
-export class ListPage implements OnInit {
+export class UsersListPage implements OnInit {
     private selectedItem: any;
     private icons = [
         'flask',
@@ -43,5 +42,4 @@ export class ListPage implements OnInit {
             }
         );
     }
-
 }
